@@ -9,6 +9,7 @@ const ProductItem = ({ product }) => {
 	const handleClick = item => {
 		addToCart(item);
 	}
+
 	return (
 		<div className="ProductItem">
 			<img src={product.images[0]} alt={product.title} />
@@ -17,7 +18,7 @@ const ProductItem = ({ product }) => {
 					<p>${product.price}</p>
 					<p>{product.title}</p>
 				</div>
-				<figure onClick={()=>handleClick(product)}>
+				<figure onClick={() => handleClick(product)} >
 					<img src={addToCartImage} alt="" />
 				</figure>
 			</div>
