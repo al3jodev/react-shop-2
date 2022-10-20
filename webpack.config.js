@@ -9,7 +9,7 @@ module.exports = {
 		//filename: 'bundle.js',
 		//publicPath: '/'
 		filename: "react-shop-2o/bundle.js",
-    	publicPath: "/react-shop-2/",
+    	publicPath: "/react-shop-2/build",
 	},
 	mode: 'development',
 	resolve: {
@@ -65,6 +65,8 @@ module.exports = {
 		}),
 	],
 	devServer: {
-		historyApiFallback: true,
+		historyApiFallback: {
+			rewrites: [{ from: /\//, to: '/404.html' }],
+		  }
 	}
 }
