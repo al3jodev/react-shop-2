@@ -8,8 +8,8 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 		//filename: 'bundle.js',
 		//publicPath: '/'
-		filename: "react-shop-2/bundle.js",
-    	publicPath: "/react-shop-2/build",
+		filename: "bundle.js",
+    	publicPath: "/build/",
 	},
 	mode: 'development',
 	resolve: {
